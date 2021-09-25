@@ -1,6 +1,5 @@
 import axios from 'axios';
 const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:3001";
-
 /** API Class.
  *
  * Static class tying together methods used to get/send to to the API.
@@ -96,23 +95,6 @@ class JoblyApi {
       .catch(err => console.error(err));
     return results;
   }
-
-/** POST /[username]/jobs/[id]  { state } => { application }
- *
- * Returns {"applied": jobId}
- *
- * Authorization required: admin or same-user-as-:username
- * */
-
-//  router.post("/:username/jobs/:id", ensureCorrectUserOrAdmin, async function (req, res, next) {
-//   try {
-//     const jobId = +req.params.id;
-//     await User.applyToJob(req.params.username, jobId);
-//     return res.json({ applied: jobId });
-//   } catch (err) {
-//     return next(err);
-//   }
-// });
 
 
   static async apply(token, username, jobId) {
