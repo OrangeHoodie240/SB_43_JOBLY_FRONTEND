@@ -1,0 +1,21 @@
+.register {
+    width: 20vw; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 15vh;
+}
+.register-form {
+    display: grid;
+    row-gap: 20px;
+}
+
+
+.register h2 {
+    text-align: center;
+}
+
+.register-error { 
+    color: red; 
+    font-size: smaller;
+    text-align: center;
+}

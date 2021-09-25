@@ -1,0 +1,23 @@
+.profile {
+    width: 35vw; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 15vh;
+    padding: 1.2%;
+    text-align: center;
+}
+
+.profile-input-container {
+    display: grid;
+    margin-bottom: 5px;
+}
+
+.profile-error { 
+    font-size: smaller;
+    color: red;
+}
+
+.profile-success {
+    font-size: smaller;
+    color: green;
+}
